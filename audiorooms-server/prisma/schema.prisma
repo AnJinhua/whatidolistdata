@@ -1,0 +1,49 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Room {
+  id           String     @id @default(auto()) @map("_id") @db.ObjectId
+  title        String
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  expireAt     DateTime?
+  lastPing     DateTime?  @default(now())
+  topics       String[]
+  participants String[]
+  isLive       Boolean    @default(true)
+  recordingUrl String     @default("")
+  isPrivate    Boolean    @default(false)
+  UserRole     UserRole[]
+
+  @@map("rooms")
+}
+
+model User {
+  id           String     @id @default(auto()) @map("_id") @db.ObjectId
+  peerId       String?
+  UserRole     UserRole[]
+  firstName    String
+  lastName     String
+  profileImage String?    @default("")
+  email        String
+  socketId     String?
+
+  @@map("users")
+}
+
+model UserRole {
+  id     String @id @default(auto()) @map("_id") @db.ObjectId
+  user   User   @relation(fields: [userId], references: [id])
+  room   Room   @relation(fields: [roomId], references: [id])
+  role   String
+  userId String @db.ObjectId
+  roomId String @db.ObjectId
+
+  @@map("user_roles")
+}

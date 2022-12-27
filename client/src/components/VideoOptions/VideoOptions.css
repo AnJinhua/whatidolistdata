@@ -1,0 +1,110 @@
+.Login-opt {
+  z-index: 2000 !important;
+}
+
+.loginButton2 {
+  white-space: nowrap !important;
+}
+
+.Login-opt {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  z-index: 1;
+  flex-direction: column;
+}
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 2rem;
+}
+
+.close-icon {
+  position: absolute;
+  right: 10px;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1.2px;
+  top: 10px;
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.close-icon-main {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.loginTitle2 {
+  white-space: nowrap;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: rgb(184, 184, 184);
+}
+
+.wrapper2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  flex-direction: column;
+}
+
+.loginButton2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.twitter2 {
+  background-color: #263853;
+}
+.github2 {
+  background-color: black;
+}
+
+.icon-login {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.login-fotter {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 10px;
+  flex: 1;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .Login-opt {
+    top: 50%;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "description": "media processing service",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --experimental-wasm-threads --experimental-wasm-bulk-memory index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ffmpeg/core": "^0.10.0",
+    "@ffmpeg/ffmpeg": "^0.10.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "ffmpeg-generate-video-preview": "^1.0.3",
+    "ffmpeg-probe": "^1.0.6",
+    "ffmpeg-static": "^5.0.0",
+    "ffprobe-static": "^3.1.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "multer": "^1.4.5-lts.1",
+    "p-queue": "^7.2.0"
+  }
+}

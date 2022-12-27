@@ -1,0 +1,81 @@
+
+
+
+
+.mini-profile-pic{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+ background-color: grey;
+}
+
+.user-online-m {
+  color: #23fa06;
+
+
+}
+
+.user-offline-m {
+  color: #f59e0b;
+
+
+}
+
+
+
+.mobileInfo {
+  display: flex;
+}
+.mobileCol {
+  display: flex;
+  justify-content: center;
+}
+
+.mobileInfo2 {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .mobileCol {
+    display: flex;
+    justify-content: center;
+  }
+  .mobileInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .mobileInfo2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mini-profile-pic{
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: 'grey';
+  }
+
+  .user-online-m {
+    color: #23fa06;
+    padding: 10px !important;
+
+  }
+  .user-offline-m {
+    color:  #f59e0b;;
+    padding: 10px !important;
+
+
+  }
+  
+}
+
+

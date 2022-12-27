@@ -1,0 +1,29 @@
+{
+  "name": "donnies-list",
+  "version": "1.0.0",
+  "description": "Whatido.app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/index.js",
+    "client": "npm start --prefix client",
+    "server": "nodemon server/index.js",
+    "webrtc": "nodemon webRTC/index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"  \"npm run webrtc\""
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donnies-list/donnies-list/issues"
+  },
+  "homepage": "https://github.com/donnies-list/donnies-list#readme",
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "-": "0.0.1",
+    "emoji-picker-react": "^3.4.8",
+    "express-session": "^1.17.2"
+  }
+}
